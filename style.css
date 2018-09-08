@@ -9,3 +9,438 @@ Version: 1.0
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 */
+
+/** Copied from dark.css */
+
+/* Inverted Color Profiles for Dark Backgrounds */
+body, blockquote.quote, q, .lead, div.lead p {color: #FFF; }
+hr {background-color: #666; }
+#site-navigation, .footer-navigation, .main-navigation a, .meta-navigation li, .header-right .widget_nav_menu li, .footer-navigation li, #secondary .widget-title, .widget_calendar #wp-calendar caption, #secondary .widget a, #secondary .widget a:link {border-color: #222; }
+#secondary .widget a, #secondary .widget a:link {color: #AAA; }
+
+blockquote, pre, .comment.odd .child-comments .comment, #secondary .widget-title, .widget_calendar #wp-calendar caption, .post .entry-footer, .comment.even, .pingback.even, .trackback.even, .comment.even .child-comments .comment, #your-profile h3, #primary .tml-action-links, thead th, tbody tr:nth-child(even) th, tbody tr:nth-child(even) td, #bbpress-forums li.bbp-header {background: rgba(255,255,255,0.1); }
+.comment.odd .child-comments .comment {background: none; }
+
+mark, ins {color: #000; }
+
+#pmpro_levels .post h2, .memberlite_signup h2, .pmpro_signup_form h2 {background: rgba(255,255,255,0.2); }
+
+#pmpro_levels_table {background: none; }
+#pmpro_levels_table.pmpro_checkout thead th, #pmpro_form .pmpro_checkout thead th {color: #FFF; }
+#pmpro_levels.pmpro_levels-table.pmpro_level-highlight, #pmpro_levels.pmpro_levels-div .pmpro_level-highlight, #pmpro_levels.pmpro_levels-2col .pmpro_level-highlight, #pmpro_levels.pmpro_levels-3col .pmpro_level-highlight, #pmpro_levels.pmpro_levels-4col .pmpro_level-highlight, .memberlite_signup, .pmpro_signup_form {background: rgba(255,255,255,0.1); border-left: none; border-right: none; }
+
+.bbp-pagination {color: #AAA; }
+#bbpress-forums div.even, #bbpress-forums ul.odd, #bbpress-forums div.even, #bbpress-forums ul.even {background: none; }
+
+/* Scroll to top link */
+a.skip-link.btn {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    display: none;
+    transition: display .35s ease-in-out;
+}
+
+a.skip-link.btn.visible {
+    display: -webkit-box;
+}
+
+/** Default link color */
+
+a {
+	color: #FFF;
+}
+a:hover, a:focus, a:active {
+	color: rgba(255,255,255,0.7);
+}
+
+/** Remove link border bottom */
+
+.navigation a,
+.masthead p a,
+.masthead .memberlite-breadcrumb a {
+	border-bottom: 0;
+}
+
+/** hr */
+
+hr { background-color: rgba(0,0,0,0.3); }
+
+.masthead hr {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/** Main Menu Dark Color Hover */
+
+.main-navigation li:hover > a {
+    color: rgba(255,255,255,0.7);
+}
+
+/** Drop down menu width issue */
+
+.main-navigation ul.sub-menu a, .meta-navigation ul.sub-menu a, .header-right .widget_nav_menu ul.sub-menu a {
+	width: 215px;
+}
+
+/** Home page shortcode row h1 size updates */
+
+.entry-content .columns h1.entry-title {
+    line-height: 2.2rem;
+    font-size: 2.2rem;
+}
+
+/** Border Colors for Dark Scheme (via dark.css) */
+
+#site-navigation,
+.main-navigation ul.sub-menu a, 
+.meta-navigation ul.sub-menu a,
+.header-right .widget_nav_menu ul.sub-menu a,
+.footer-navigation, .main-navigation a,
+.meta-navigation li,
+.header-right .widget_nav_menu li,
+.footer-navigation li,
+#secondary .widget-title,
+.widget_calendar #wp-calendar caption,
+#secondary .widget a,
+#secondary .widget a:link {
+    border-color: #222 !important;
+}
+
+/** Footer Copyright bar links */
+
+footer.site-footer a, footer.site-footer a:visited {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: initial;
+}
+
+footer.site-footer a:hover {
+    color: #e1e1e1;
+}
+
+/** PMP Levels boxes */
+
+#meta-navigation ul ul a,
+#pmpro_levels .post h2,
+.memberlite_signup h2, .pmpro_signup_form h2, .primary {
+    color: #FFF !important;
+    background: rgba(0,0,0,0.2);
+    border-top: 0;
+    border-bottom: 0;
+	padding: 1.45rem;
+}
+
+#pmpro_levels.pmpro_advanced_levels-div .entry-footer {
+	border-bottom: 0;
+}
+
+#pmpro_levels.pmpro_levels-table.pmpro_level-highlight,
+#pmpro_levels.pmpro_levels-div .pmpro_level-highlight,
+#pmpro_levels.pmpro_levels-2col .pmpro_level-highlight,
+#pmpro_levels.pmpro_levels-3col .pmpro_level-highlight,
+#pmpro_levels.pmpro_levels-4col .pmpro_level-highlight,
+.memberlite_signup, .pmpro_signup_form {
+	border-bottom: .5rem solid #191919;
+}
+
+/** Masthead for inner pages */
+
+.masthead-banner {
+	background-image: none !important;
+	background: #4b000f;
+}
+
+/** Post content bottom border color */
+
+.page .entry-content .entry-content {
+    border-bottom: 1px solid #413D3D;
+}
+
+/** Sidebar recent posts thumbnail widget */
+
+#secondary .widget.widget_recent_entries_thumbnails ul li {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#secondary .widget a:hover {
+	color: rgba(255,255,255,0.7);
+}
+
+/** Post footer */
+
+.entry-content, .entry-summary {
+	border-bottom: 0;
+}
+
+blockquote, pre, .comment.odd .child-comments .comment, #secondary .widget-title, .widget_calendar #wp-calendar caption, .post .entry-footer, .comment.even, .pingback.even, .trackback.even, .comment.even .child-comments .comment, #your-profile h3, #primary .tml-action-links, thead th, tbody tr:nth-child(even) th, tbody tr:nth-child(even) td, #bbpress-forums li.bbp-header {
+    background: rgba(0,0,0,0.2);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+/** Entry footer */
+
+.post .entry-footer {
+	font-style: initial;
+	font-size: 14px;
+}
+
+#primary .entry-footer a {
+	border: none;
+	color: #FFF;
+}
+
+/** PMP - paragraph Messages */
+.pmpro_message.pmpro_default,
+.pmpro_content_message,
+#buddypress div#message p,
+#sitewide-notice p {
+    background-color: rgba(0,0,0,0.3);
+    border-color: rgba(0,0,0,0.3);
+}
+
+/** Comments */
+
+.comment-respond label {
+	margin-right: 0.5%;
+}
+
+/** Input fields */
+
+#primary input[type="text"],
+#primary input[type="email"],
+#primary input[type="url"],
+#primary input[type="password"],
+#primary input[type="search"],
+#primary textarea {
+    color: #f9f9f9;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 1.45rem;
+    background: rgba(0,0,0,0.2);
+}
+
+/** Page Templates */
+
+body.page-template-fluid-width .comment-respond {
+    margin: 1.45rem;
+}
+
+/** Meta Links in header */
+
+#meta-navigation a:hover {
+	color: rgba(255,255,255,0.1) !important;
+}
+
+.meta-navigation ul li,
+.header-right .widget_nav_menu ul li,
+.footer-navigation ul li {
+	border-right: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+.meta-navigation ul li:last-child,
+.header-right .widget_nav_menu ul li:last-child,
+.footer-navigation ul li:last-child {
+    border: none !important;
+}
+
+/** Banner Action Links */
+
+body.scheme_pink_punch #primary .banner.banner_action a,
+body.scheme_purple_dinosaur #primary .banner.banner_action a,
+body.scheme_city_lights #primary .banner.banner_action a,
+body.scheme_cotton_candy #primary .banner.banner_action a,
+body.scheme_skin_deep #primary .banner.banner_action a,
+body.scheme_slate_blue #primary .banner.banner_action a {
+    color: #FFF;
+}
+
+body.scheme_pink_punch #primary .banner.banner_action a:active,
+body.scheme_purple_dinosaur #primary .banner.banner_action a:active,
+body.scheme_city_lights #primary .banner.banner_action a:active,
+body.scheme_cotton_candy #primary .banner.banner_action a:active,
+body.scheme_skin_deep #primary .banner.banner_action a:acive,
+body.scheme_slate_blue #primary .banner.banner_action a:active,
+body.scheme_pink_punch #primary .banner.banner_action a:focus,
+body.scheme_purple_dinosaur #primary .banner.banner_action a:focus,
+body.scheme_city_lights #primary .banner.banner_action a:focus,
+body.scheme_cotton_candy #primary .banner.banner_action a:focus,
+body.scheme_skin_deep #primary .banner.banner_action a:focus,
+body.scheme_slate_blue #primary .banner.banner_action a:focus,
+body.scheme_pink_punch #primary .banner.banner_action a:hover,
+body.scheme_purple_dinosaur #primary .banner.banner_action a:hover,
+body.scheme_city_lights #primary .banner.banner_action a:hover,
+body.scheme_cotton_candy #primary .banner.banner_action a:hover,
+body.scheme_skin_deep #primary .banner.banner_action a:hover,
+body.scheme_slate_blue #primary .banner.banner_action a:hover {
+    color: rgba(255,255,2555,0.7);
+}
+
+/** Sidebar Signup Box */
+
+#secondary form.pmpro_form.memberlite_signup {
+    margin-bottom: 2.9rem;
+}
+
+/** Sidebar widget list links */
+
+#secondary .widget li {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/** Sidebar Form Search */
+#secondary .widget_search .search-form {
+    padding: 1.45rem 0;
+}
+
+/** Sidebar Widget Title Links */
+
+#secondary .widget .widget-title a {
+    border-color: transparent;
+    color: #FFF;
+}
+
+#secondary .widget .widget-title a:hover {
+	color: rgba(255,255,255,0.7);
+}
+
+/** Sidebar Categories Widget Links */
+
+#secondary .widget_categories li {
+    border: none;
+    padding: 1.45rem;
+}
+
+/** Landing Pages for Memberships */
+
+#pmpro_levels.pmpro_advanced_levels-div .post {
+    padding: 0;
+}
+
+/** Landing Pages for memberships */
+
+.site-main .page-navigation {
+	border-top: 1px solid rgba(255,255,255,0.1);
+	padding-bottom: 1.45rem;
+}
+
+/** Landing Page Title Price margin */
+
+.page-template-landing .masthead .pmpro_level-price {
+    margin-bottom: 1.45rem;
+}
+
+/** Landing Page Membership 2 column */
+
+#pmpro_levels.pmpro_advanced_levels-div .pmpro_level-highlight .entry-content, #pmpro_levels.pmpro_advanced_levels-div .pmpro_level-highlight .entry-footer {
+    padding: 1.45rem;
+}
+
+/** Tables */
+
+tbody th, tbody td {
+    border-bottom: none;
+}
+
+/** Page previous/next links */
+
+nav#nav-below {
+    padding-bottom: 1.45rem;
+}
+
+/** Landing Page Compare Table */
+
+#pmpro_levels.pmpro_advanced_levels-compare_table thead tr:last-child th,
+#pmpro_levels.pmpro_advanced_levels-compare_table tbody tr:last-child td{
+    border-bottom: .5rem solid rgba(0,0,0,0.3);
+}
+
+#pmpro_levels.pmpro_advanced_levels-compare_table tbody tr:hover {
+	background: rgba(0,0,0,0.3);
+}
+
+#pmpro_levels.pmpro_advanced_levels-compare_table tbody td:hover::after,
+#pmpro_levels.pmpro_advanced_levels-compare_table tbody tr:nth-child(even) td:hover::after {
+	background-color: rgba(0,0,0,0.3);
+}
+
+/** Member signup h2 */
+
+.memberlite_signup h2 {
+    font-size: 2.75rem;
+}
+
+/** Sidebar Widget */
+
+#secondary .widget_search input[type=search],
+#secondary .widget_product_search input[type=search] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.3);
+    padding: 1.45rem;
+}
+
+/** Title border bottom removal */
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .navigation a {
+    border-bottom: none;
+}
+
+/** Recent Posts Featured images */
+
+#widget_memberlite_recent_posts .widget_has_thumbnail .post.hentry .entry-header .widget_post_thumbnail img {
+    border-radius: 50%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/** Banner Title Color */
+
+#main .banner_primary,
+#main .banner_primary h1,
+#main .banner_primary h2,
+#main .banner_primary h3,
+#main .banner_primary h4,
+#main .banner_primary h5,
+#main .banner_primary a,
+#main .banner_primary a:link,
+#main .banner_primary a:hover,
+#main .banner_secondary,
+#main .banner_secondary h1,
+#main .banner_secondary h2,
+#main .banner_secondary h3,
+#main .banner_secondary h4,
+#main .banner_secondary h5,
+#main .banner_secondary a,
+#main .banner_secondary a:link,
+#main .banner_secondary a:hover {
+    color: rgba(255,255,255,0.7);
+}
+
+/** Meta Header Title */
+
+.meta-navigation a:hover,
+.header-right .widget_nav_menu a:hover {
+    border-bottom: none;
+    color: #FFF;
+}
+
+/** Header Sticky Navigation */
+
+#site-navigation.visible {
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 99999;
+}
+
+/** Header - Meta member link hover */
+
+#meta-member a:hover {
+    color: rgba(255,255,255,0.7);
+}
