@@ -339,6 +339,11 @@ function memberlite_dark_childtheme_scripts() { ?>
 				background-image: url(<?php echo get_stylesheet_directory_uri() . '/images/' . get_theme_mod( 'background_texture' ); ?>) !important;
 				background-attachment: fixed !important;
 			}
+			/** Masthead for inner pages */
+			.masthead-banner {
+				background-image: none !important;
+				background: <?php echo get_theme_mod( 'color_action' ); ?>;
+			}
 			/** Button Defaults for input submits */
 			a.skip-link.btn,
 			input[type="button"], input[type="reset"], input[type="submit"] {
