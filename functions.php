@@ -341,8 +341,8 @@ function memberlite_dark_childtheme_scripts() { ?>
 			}
 			/** Masthead for inner pages */
 			.masthead-banner {
-				background-image: none !important;
 				background: <?php echo get_theme_mod( 'color_action' ); ?>;
+				background-size: cover;
 			}
 			/** Button Defaults for input submits */
 			a.skip-link.btn,
