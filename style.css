@@ -437,3 +437,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .navigat
 #meta-member a:hover {
     color: rgba(255,255,255,0.7);
 }
+
+/** Tabs page */
+
+.memberlite_tabbable ul.memberlite_tabs li > a {
+    border: 1px solid transparent;
+}
