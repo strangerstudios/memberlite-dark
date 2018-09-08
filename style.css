@@ -147,7 +147,7 @@ footer.site-footer a:hover {
 /** Post content bottom border color */
 
 .page .entry-content .entry-content {
-    border-bottom: 1px solid #413D3D;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 /** Sidebar recent posts thumbnail widget */
