@@ -194,9 +194,17 @@ blockquote, pre, .comment.odd .child-comments .comment, #secondary .widget-title
 #primary input[type="search"],
 #primary textarea {
     color: #f9f9f9;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(189, 96, 96, 0.2);
     border-radius: 3px;
     padding: 1.45rem;
+    background: rgba(0,0,0,0.2);
+}
+
+.search-form input[type="search"] {
+    color: #f9f9f9;
+    border: 1px solid rgba(255,255,255, 0.1);
+    border-radius: 3px;
+    padding: 1.0rem;
     background: rgba(0,0,0,0.2);
 }
 
