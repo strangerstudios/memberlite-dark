@@ -86,11 +86,17 @@ hr { background-color: rgba(0,0,0,0.3); }
 
 /** Footer Copyright bar links */
 
-footer.site-footer a, footer.site-footer a:visited {
-    color: #f9f9f9;
-    text-decoration: none;
+footer.site-footer .site-info a {
     font-size: 14px;
     font-style: initial;
+}
+
+/** Footer Link Colors */
+
+footer.site-footer a,
+footer.site-footer a:visited {
+    color: #f9f9f9;
+    text-decoration: none;
 }
 
 footer.site-footer a:hover {
