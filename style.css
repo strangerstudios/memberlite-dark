@@ -208,6 +208,15 @@ blockquote, pre, .comment.odd .child-comments .comment, #secondary .widget-title
     background: rgba(0,0,0,0.2);
 }
 
+/** Checkout Page */
+
+form#pmpro_form .pmpro_checkout h3 {
+    background: transparent;
+    border-top: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 1.45rem;
+}
+
 /** Page Templates */
 
 body.page-template-fluid-width .comment-respond {
