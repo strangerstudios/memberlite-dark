@@ -1,7 +1,7 @@
 /*
 Theme Name: Memberlite - Dark Child Theme
 Theme URI: https://memberlitetheme.com/dark/
-Description: This is a Memberlite child theme.   
+Description: This is a Memberlite child theme.
 Author: Robert DeVore, Kim Coleman
 Author URI: https://paidmembershipspro.com/  
 Template: memberlite
@@ -58,9 +58,17 @@ form.pmpro_form hr {
     color: rgba(255,255,255,0.7);
 }
 
+/** Header - site description */
+
+.site-branding span.site-description {
+    font-style: normal;
+}
+
 /** Drop down menu width issue */
 
-.main-navigation ul.sub-menu a, .meta-navigation ul.sub-menu a, .header-right .widget_nav_menu ul.sub-menu a {
+.main-navigation ul.sub-menu a,
+.meta-navigation ul.sub-menu a,
+.header-right .widget_nav_menu ul.sub-menu a {
 	width: 215px;
 }
 
