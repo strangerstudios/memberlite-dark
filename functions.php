@@ -329,7 +329,11 @@ function memberlite_dark_childtheme_scripts() { ?>
 		});
 	</script>
 	<?php }
-
+	if ( is_admin_bar_showing() ) { ?>
+		<style type="text/css">
+			#site-navigation.visible { top: 32px; }
+		</style>
+	<?php }
 	if ( 'none' != get_theme_mod( 'background_texture' ) ) { ?>
 		<style type="text/css">
 			/** Background Textures */
