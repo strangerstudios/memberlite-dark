@@ -359,7 +359,7 @@ function memberlite_dark_childtheme_scripts() { ?>
 			.masthead,
 			.banner_action,
 			.footer-widgets {
-				background-image: url(<?php echo get_stylesheet_directory_uri() . '/images/' . get_theme_mod( 'background_texture' ); ?>) !important;
+				background-image: url(<?php echo get_stylesheet_directory_uri() . '/images/' . get_theme_mod( 'memberlite_dark_background_texture' ); ?>) !important;
 				<?php if ( true === get_theme_mod( 'memberlite_dark_texture_parallax' ) ) { ?>
 				background-attachment: fixed !important;
 				<?php } ?>
