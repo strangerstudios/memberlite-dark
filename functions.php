@@ -316,7 +316,7 @@ function memberlite_dark_childtheme_customize_register( $wp_customize ) {
 	);  
 
 	$wp_customize->add_control(
-		'setting_id', array(
+		'memberlite_dark_sticky_nav', array(
 			'label'    => __( 'Stick menu to top of screen on scroll', 'memberlite-dark' ),
 			'section'  => 'memberlite_dark_childtheme_options',
 			'settings' => 'memberlite_dark_sticky_nav',
