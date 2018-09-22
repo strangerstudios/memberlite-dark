@@ -369,44 +369,6 @@ function memberlite_dark_childtheme_scripts() { ?>
 				background: <?php echo get_theme_mod( 'color_action' ); ?>;
 				background-size: cover;
 			}
-			/** Button Defaults for input submits */
-			a.skip-link.btn,
-			input[type="button"], input[type="reset"], input[type="submit"] {
-				background: <?php echo get_theme_mod( 'color_action' ); ?>;
-			}
-			a.skip-link.btn:hover,
-			input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,
-			input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
-			input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active,
-			.menu-toggle:hover,
-			.menu-toggle:focus,
-			.menu-toggle:active {
-				background: <?php echo get_theme_mod( 'color_action' ); ?>;
-			}
-			/** Site description color */
-			.site-header .site-description {
-				color: <?php echo get_theme_mod( 'color_meta_link' ); ?> !important;
-				font-size: 15px;
-				font-style: initial;
-			}
-			/** Action Color - Banner BG */
-			.banner_action {
-				background-color: <?php echo get_theme_mod( 'color_secondary' ); ?>;
-			}
-			/** Site branding title hover */
-			.site-branding .site-title a:hover {
-				color: <?php echo get_theme_mod( 'header_textcolor' ); ?>;
-			}
-			/** Blog Post Title Link Color in Secondary Banner */
-			#main .banner_secondary a, #main .banner_secondary a:link {
-				color: <?php echo get_theme_mod( 'color_action' ); ?>;
-			}
-			#main .banner_secondary a:hover,
-			#main .banner_secondary a:active,
-			#main .banner_secondary a:focus {
-				color: <?php echo get_theme_mod( 'color_action' ); ?>;
-			}
-
 		</style>
 	<?php } ?>
 <?php }
