@@ -287,6 +287,25 @@ function memberlite_dark_childtheme_customize_register( $wp_customize ) {
 		)
 	);
 
+	/** Texture Parallax Effect */
+
+	$wp_customize->add_setting(
+		'memberlite_dark_texture_parallax', array(
+			'default'   => false,
+			'transport' => 'refresh',
+		)
+	);  
+
+	$wp_customize->add_control(
+		'memberlite_dark_texture_parallax', array(
+			'label'    => __( 'Add parallax effect to textures', 'memberlite-dark' ),
+			'section'  => 'memberlite_dark_childtheme_options',
+			'settings' => 'memberlite_dark_texture_parallax',
+			'type'     => 'checkbox',
+			'priority' => 6
+		)
+	);
+
 	/** Sticky Navigation */
 
 	$wp_customize->add_setting(
@@ -341,7 +360,9 @@ function memberlite_dark_childtheme_scripts() { ?>
 			.banner_action,
 			.footer-widgets {
 				background-image: url(<?php echo get_stylesheet_directory_uri() . '/images/' . get_theme_mod( 'background_texture' ); ?>) !important;
+				<?php if ( true === get_theme_mod( 'memberlite_dark_texture_parallax' ) ) { ?>
 				background-attachment: fixed !important;
+				<?php } ?>
 			}
 			/** Masthead for inner pages */
 			.masthead-banner {
