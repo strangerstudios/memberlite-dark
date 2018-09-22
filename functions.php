@@ -245,7 +245,7 @@ function memberlite_dark_childtheme_customize_register( $wp_customize ) {
 			'type'     => 'select',
 			'choices'  => array(
 				'none'                         => __( 'None', 'memberlite' ),
-				'texture-1.png'                => __( 'Texture #1', 'memberlite' ),
+				'texture-1.png'                => __( 'Default', 'memberlite' ),
 				'texture-2.png'                => __( '3Px Tile', 'memberlite' ),
 				'texture-3.png'                => __( 'Arabesque', 'memberlite' ),
 				'texture-4.png'                => __( 'Asfalt (dark)', 'memberlite' ),
