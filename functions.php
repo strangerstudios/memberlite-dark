@@ -28,7 +28,7 @@ function memberlite_dark_child_switch_theme_update_mods() {
 add_action( 'switch_theme', 'memberlite_dark_child_switch_theme_update_mods' );
 
 // Filter - Add color schemes
-function dark_color_schemes() {
+function memberlite_dark_color_schemes() {
 	$dark_schemes = array(
 		'default' => array(
 			'label'  => __( 'Default', 'memberlite' ),
@@ -201,7 +201,7 @@ function dark_color_schemes() {
 	);
 	return $dark_schemes;
 }
-add_filter( 'memberlite_color_schemes', 'dark_color_schemes' );
+add_filter( 'memberlite_color_schemes', 'memberlite_dark_color_schemes' );
 
 /** Filter - back to top */
 
@@ -230,7 +230,7 @@ function memberlite_dark_childtheme_customize_register( $wp_customize ) {
 	/** Sticky Navigation */
 
 	$wp_customize->add_setting(
-		'background_texture',
+		'memberlite_dark_background_texture',
 		array(
 			'default'              => 'none',
 			'transport'            => 'refresh',
@@ -238,7 +238,7 @@ function memberlite_dark_childtheme_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-		'background_texture',
+		'memberlite_dark_background_texture',
 		array(
 			'label'    => __( 'Background Texture', 'memberlite' ),
 			'section'  => 'memberlite_dark_childtheme_options',
@@ -290,7 +290,7 @@ function memberlite_dark_childtheme_customize_register( $wp_customize ) {
 	/** Sticky Navigation */
 
 	$wp_customize->add_setting(
-		'sticky_nav', array(
+		'memberlite_dark_sticky_nav', array(
 			'default'   => false,
 			'transport' => 'refresh',
 		)
@@ -300,7 +300,7 @@ function memberlite_dark_childtheme_customize_register( $wp_customize ) {
 		'setting_id', array(
 			'label'    => __( 'Stick menu to top of screen on scroll', 'memberlite-dark' ),
 			'section'  => 'memberlite_dark_childtheme_options',
-			'settings' => 'sticky_nav',
+			'settings' => 'memberlite_dark_sticky_nav',
 			'type'     => 'checkbox',
 			'priority' => 6
 		)
@@ -313,7 +313,7 @@ add_action( 'customize_register', 'memberlite_dark_childtheme_customize_register
  * Memberlite Dark - child theme scripts 
  */
 function memberlite_dark_childtheme_scripts() { ?>
-	<?php if ( true === get_theme_mod( 'sticky_nav' ) ) { ?>
+	<?php if ( true === get_theme_mod( 'memberlite_dark_sticky_nav' ) ) { ?>
 	<script>
 		jQuery(document).ready(function ($) {
 			var s = $("#site-navigation");
@@ -334,7 +334,7 @@ function memberlite_dark_childtheme_scripts() { ?>
 			#site-navigation.visible { top: 32px; }
 		</style>
 	<?php }
-	if ( 'none' != get_theme_mod( 'background_texture' ) ) { ?>
+	if ( 'none' != get_theme_mod( 'memberlite_dark_background_texture' ) ) { ?>
 		<style type="text/css">
 			/** Background Textures */
 			.masthead,
