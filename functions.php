@@ -222,20 +222,21 @@ require_once get_stylesheet_directory() . '/inc/customizer.php';
  */
 function memberlite_dark_childtheme_scripts() { ?>
 	<?php if ( true === get_theme_mod( 'memberlite_dark_sticky_nav' ) ) { ?>
-	<script>
-		jQuery(document).ready(function ($) {
-			var s = $("#site-navigation");
-			var pos = s.position();					   
-			$(window).scroll(function() {
-				var windowpos = $(window).scrollTop();
-				if (windowpos >= pos.top) {
-					s.addClass("visible");
-				} else {
-					s.removeClass("visible");	
-				}
+		<!-- Sticky Nav -->
+		<script>
+			jQuery(document).ready(function ($) {
+				var s = $("#site-navigation");
+				var pos = s.position();					   
+				$(window).scroll(function() {
+					var windowpos = $(window).scrollTop();
+					if (windowpos >= pos.top) {
+						s.addClass("visible");
+					} else {
+						s.removeClass("visible");	
+					}
+				});
 			});
-		});
-	</script>
+		</script>
 	<?php }
 	if ( is_admin_bar_showing() ) { ?>
 		<style type="text/css">
@@ -243,6 +244,7 @@ function memberlite_dark_childtheme_scripts() { ?>
 		</style>
 	<?php }
 	if ( 'none' != get_theme_mod( 'memberlite_dark_background_texture' ) ) { ?>
+		<!-- Textures -->
 		<style type="text/css">
 			/** Background Textures */
 			.masthead,
