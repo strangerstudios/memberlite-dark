@@ -5,11 +5,13 @@
  * @package Memberlite 4.0
  * @subpackage Memberlite Dark 1.0
  */
+define( 'MEMBERLITE_DARK_VERSION', '1.0' );
  
 // Enqueue scripts and styles.
 function memberlite_dark_child_enqueue_styles() {
     wp_enqueue_style( 'memberlite', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_script( 'memberlite-script', get_stylesheet_directory_uri() . '/script.js', array( 'jquery' ), MEMBERLITE_VERSION, true );
+    wp_enqueue_style( 'memberlite_darkcss', get_template_directory_uri() . '/css/dark.css', array(), MEMBERLITE_VERSION );
+	wp_enqueue_script( 'memberlite-dark-script', get_stylesheet_directory_uri() . '/script.js', array( 'jquery' ), MEMBERLITE_DARK_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'memberlite_dark_child_enqueue_styles' );
 
@@ -214,35 +216,12 @@ function memberlite_dark_childtheme_back_to_top() {
 add_filter( 'memberlite_back_to_top', 'memberlite_dark_childtheme_back_to_top' );
 
 /** Customizer options */
-
 require_once get_stylesheet_directory() . '/inc/customizer.php';
 
 /**
  * Memberlite Dark - child theme scripts 
  */
-function memberlite_dark_childtheme_scripts() { ?>
-	<?php if ( true === get_theme_mod( 'memberlite_dark_sticky_nav' ) ) { ?>
-		<!-- Sticky Nav -->
-		<script>
-			jQuery(document).ready(function ($) {
-				var s = $("#site-navigation");
-				var pos = s.position();					   
-				$(window).scroll(function() {
-					var windowpos = $(window).scrollTop();
-					if (windowpos >= pos.top) {
-						s.addClass("visible");
-					} else {
-						s.removeClass("visible");	
-					}
-				});
-			});
-		</script>
-	<?php }
-	if ( is_admin_bar_showing() ) { ?>
-		<style type="text/css">
-			#site-navigation.visible { top: 32px; }
-		</style>
-	<?php }
+function memberlite_dark_childtheme_scripts() {
 	if ( 'none' != get_theme_mod( 'memberlite_dark_background_texture' ) ) { ?>
 		<!-- Textures -->
 		<style type="text/css">
