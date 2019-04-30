@@ -14,7 +14,7 @@ $wp_customize->add_section(
     )
 );
 
-/** Sticky Navigation */
+/** Background Textures */
 
 $wp_customize->add_setting(
     'memberlite_dark_background_texture',
@@ -75,7 +75,6 @@ $wp_customize->add_control(
 );
 
 /** Texture Parallax Effect */
-
 $wp_customize->add_setting(
     'memberlite_dark_texture_parallax', array(
         'default'   => false,
@@ -88,25 +87,6 @@ $wp_customize->add_control(
         'label'    => __( 'Add parallax effect to textures', 'memberlite-dark' ),
         'section'  => 'memberlite_dark_childtheme_options',
         'settings' => 'memberlite_dark_texture_parallax',
-        'type'     => 'checkbox',
-        'priority' => 6
-    )
-);
-
-/** Sticky Navigation */
-
-$wp_customize->add_setting(
-    'memberlite_dark_sticky_nav', array(
-        'default'   => false,
-        'transport' => 'refresh',
-    )
-);  
-
-$wp_customize->add_control(
-    'memberlite_dark_sticky_nav', array(
-        'label'    => __( 'Stick menu to top of screen on scroll', 'memberlite-dark' ),
-        'section'  => 'memberlite_dark_childtheme_options',
-        'settings' => 'memberlite_dark_sticky_nav',
         'type'     => 'checkbox',
         'priority' => 6
     )
